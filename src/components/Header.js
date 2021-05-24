@@ -2,10 +2,10 @@ import React from "react";
 import HomeIcon from "@material-ui/icons/Home";
 import ShoppingCartIcon from "@material-ui/icons/ShoppingCart";
 import "./header.css";
-import Badge from '@material-ui/core/Badge';
+import Badge from "@material-ui/core/Badge";
+import { Link } from "react-router-dom";
 
-
-const Header = ({number}) => {
+const Header = ({ number }) => {
   return (
     <div className="store">
       <div>
@@ -13,14 +13,17 @@ const Header = ({number}) => {
       </div>
       <div className="icons">
         <div className="homeIcon">
-        <HomeIcon color="primary" fontSize="large" />
+          <Link to="/">
+            <HomeIcon color="primary" fontSize="large" />
+          </Link>
         </div>
-        
 
         <div className="shoppingIcon">
-        <Badge badgeContent={number} color="secondary" >
-        <ShoppingCartIcon color="primary" fontSize="large" />
-        </Badge>
+          <Link to="/cart">
+            <Badge badgeContent={number} color="secondary">
+              <ShoppingCartIcon color="primary" fontSize="large" />
+            </Badge>
+          </Link>
         </div>
       </div>
     </div>
