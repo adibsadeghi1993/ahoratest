@@ -1,8 +1,15 @@
 .products{
     width: 100%;
     display: grid;
-    grid-gap: 7px;
+    grid-gap: 10px;
     grid-template-columns: repeat(auto-fit,minmax(300px,1fr));
+  
+}
+.maincontent{
+    width: 100%;
+   
+  max-width: 1170px;
+
 }
 
 .card{
