@@ -5,7 +5,8 @@ import {IconButton} from "@material-ui/core";
 
 const Products = ({ products,cartHandler }) => {
   return (
-    <div className="maincontent">
+   <div className="main">
+        <div className="maincontent">
         <div className="products">
       {products.map((item) => {
         return (
@@ -27,6 +28,7 @@ const Products = ({ products,cartHandler }) => {
       })}
     </div>
     </div>
+   </div>
   );
 };
 

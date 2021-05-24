@@ -11,6 +11,11 @@
   max-width: 1170px;
 
 }
+.main{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
 
 .card{
     background-color: #b9d5ff;
