@@ -1,0 +1,11 @@
+.product{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.changingqty{
+    display: flex;
+}
+.productcontent{
+    display: flex;
+}
