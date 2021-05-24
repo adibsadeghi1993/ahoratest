@@ -3,6 +3,7 @@ import Header from "./components/Header";
 import React, { useState, useEffect } from "react";
 import axios from "axios"
 import Products from "./components/Products";
+import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 
 function App() {
   const [products, setProducts] = useState([]);
@@ -44,9 +45,27 @@ function App() {
   return (
     <div className="App">
       <Header number={cart.length} />
+     
       <div className="container">
-        <Products products={products}  cartHandler={cartHandler} />
-      </div>
+      <Router>
+        <Switch>
+        <Route
+          path="/"
+          exact
+          render={(props) => (
+            <Products
+              products={products}
+              cartHandler={cartHandler}
+              {...props}
+            />
+          )}
+        />
+       
+        </Switch>
+      </Router>
+       
+       </div>
+      
     </div>
   );
 }
