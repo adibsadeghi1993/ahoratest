@@ -4,7 +4,7 @@ import ShoppingCartIcon from "@material-ui/icons/ShoppingCart";
 import "./header.css";
 import Badge from '@material-ui/core/Badge';
 
-const Header = () => {
+const Header = ({number}) => {
   return (
     <div className="store">
       <div>
@@ -17,7 +17,7 @@ const Header = () => {
         
 
         <div className="shoppingIcon">
-        <Badge badgeContent={4} color="secondary" >
+        <Badge badgeContent={number} color="secondary" >
         <ShoppingCartIcon color="primary" fontSize="large" />
         </Badge>
         </div>

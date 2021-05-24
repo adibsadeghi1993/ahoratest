@@ -1,0 +1,44 @@
+.products{
+    width: 100%;
+    display: grid;
+    grid-gap: 7px;
+    grid-template-columns: repeat(auto-fit,minmax(250px,1fr));
+}
+
+.card{
+    background-color: #b9d5ff;
+    border-radius: 5px;
+    overflow: hidden;
+    
+}
+.image{
+    width: 100%;
+  
+    padding-bottom: 60%;
+    position: relative;
+   
+   
+}
+.imagecontent{
+position: absolute;
+top: 0;
+width: 100%;
+height: 100%;
+object-fit: cover;
+
+}
+
+.content{
+    padding: 5px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 10px;
+}
+
+.addbtn{
+    padding: 5px;
+    display: flex;
+   justify-content: center;
+}
+
