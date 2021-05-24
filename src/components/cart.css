@@ -1,4 +1,48 @@
+.header{
+    background-color: rgb(85, 79, 80);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 15px;
+    color: white;
+}
 
+.detailes{
+    display: flex;
+}
+
+.qty{
+  margin-right: 6rem;  
+}
+
+.price{
+    margin-right: 3rem;
+}
+.allproducts{
+    margin-top: 4px;
+    border-bottom: 2px solid red;
+}
+
+.calculated{
+    margin-top: 20px;
+    display: flex; 
+   
+    flex-direction: column;
+    align-items: flex-end;
+   padding-bottom: 50px;
+
+}
+.tax{
+    border: 2px solid orange;
+    margin:5px 0;
+    border-radius: 6px;
+    padding: 5px;
+}
+.balance{
+    border: 2px solid orange; 
+    border-radius: 6px;
+    padding: 5px; 
+}
 
 
 

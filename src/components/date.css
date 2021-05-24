@@ -1,0 +1,17 @@
+.date{
+    border: 2px solid orange;
+    margin-bottom: 3px;
+    border-radius: 6px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2px 5px;
+}
+
+.maindate{
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+    margin-bottom: 3rem;
+    width: 25%;
+}

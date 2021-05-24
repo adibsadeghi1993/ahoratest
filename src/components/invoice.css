@@ -1,0 +1,32 @@
+.invoice{
+    border: 2px solid orange;
+}
+.subheader{
+    display: flex;
+    justify-content: space-around;
+}
+
+.for{
+    padding-left: 2px;
+    padding-top: 2px;
+    border: 2px solid orange;
+    border-radius: 6px;
+    margin-bottom: 15px;
+
+}
+
+.from{
+    padding-left: 2px;
+    padding-top: 2px;
+    border: 2px solid orange;
+    border-radius: 6px;
+    margin-bottom: 15px;
+}
+
+.main{
+    display: flex;
+    margin-top: 4rem;
+    justify-content: space-around;
+    margin-bottom: 1.5rem;
+    border-bottom: 1px solid rgb(228, 202, 228);
+}

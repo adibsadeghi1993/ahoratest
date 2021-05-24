@@ -1,7 +1,9 @@
 import React, { useState, useEffect } from "react";
 
-import "./cart.css"
+import "./cart.css";
 import CartItem from "./CartItem";
+import Date from "./Date";
+import Invoice from "./Invoice";
 
 const Cart = ({ cart, setCart }) => {
   const [totalPrice, setTotalPrice] = useState(0);
@@ -42,19 +44,44 @@ const Cart = ({ cart, setCart }) => {
     }
   };
 
- 
-
   const tax = 0.05 % totalPrice;
   const total = tax + totalPrice;
 
+  if(cart.length===0){
+      return <p>go home page and  add product </p>
+  }
+
   return (
     <div>
-      <div>all product that was added</div>
-      <div>
+        <Invoice/>
+        <Date/>
+      <div className="header">
+        <div className="desc">
+          <h3>description</h3>
+        </div>
+        <div className="detailes">
+          <h3 className="price">Price</h3>
+          <h3 className="qty">Qty</h3>
+          <h3 className="amount">Amount</h3>
+        </div>
+      </div>
+      <div className="allproducts">
         {cart.map((product) => (
-          <CartItem product={product} increaseHandler={increaseHandler}  decreaseHandler={decreaseHandler}     />
-          
-          ))}
+          <CartItem
+            product={product}
+            increaseHandler={increaseHandler}
+            decreaseHandler={decreaseHandler}
+          />
+        ))}
+      </div>
+      <div className="calculated">
+        <div>Subtotal: ${totalPrice}</div>
+
+        <p className="tax"> Tax(5%): ${tax}</p>
+
+        <div>Total: ${total}</div>
+
+        <h3 className="balance"> Balance Due: ${total}</h3>
       </div>
     </div>
   );
