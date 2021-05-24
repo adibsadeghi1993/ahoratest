@@ -7,8 +7,7 @@
 }
 
 .for{
-    padding-left: 2px;
-    padding-top: 2px;
+    padding: 8px;
     border: 2px solid orange;
     border-radius: 6px;
     margin-bottom: 15px;
@@ -16,11 +15,11 @@
 }
 
 .from{
-    padding-left: 2px;
-    padding-top: 2px;
+    padding: 8px;
     border: 2px solid orange;
     border-radius: 6px;
     margin-bottom: 15px;
+    
 }
 
 .main{
