@@ -5,11 +5,11 @@ import KeyboardArrowUpIcon from "@material-ui/icons/KeyboardArrowUp";
 import { IconButton } from "@material-ui/core";
 
 const CartItem = ({ product, increaseHandler, decreaseHandler }) => {
-    const {qty,price}=product
-    const amount=(a,b)=>{
-    return a*b
-    }
-    const Amount=amount(qty,price)
+  const { qty, price } = product;
+  const amount = (a, b) => {
+    return a * b;
+  };
+  const Amount = amount(qty, price);
   return (
     <div className="product">
       <div>
@@ -28,10 +28,7 @@ const CartItem = ({ product, increaseHandler, decreaseHandler }) => {
           </IconButton>
         </div>
 
-        <p>
-       
-        {Amount}
-        </p>
+        <p>{Amount}</p>
       </div>
     </div>
   );

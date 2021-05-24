@@ -46,7 +46,8 @@ function App() {
     <div className="App">
       <Router>
         <Header number={cart.length} />
-        <div className="container">
+      
+       <div className="container">
           <Switch>
             <Route
               path="/"
@@ -72,6 +73,7 @@ function App() {
             />
           </Switch>
         </div>
+    
       </Router>
     </div>
   );
