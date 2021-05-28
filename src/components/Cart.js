@@ -44,7 +44,7 @@ const Cart = ({ cart, setCart }) => {
     }
   };
 
-  const tax = 0.05 % totalPrice;
+  const tax = 0.05 * totalPrice;
   const total = tax + totalPrice;
 
   if(cart.length===0){
