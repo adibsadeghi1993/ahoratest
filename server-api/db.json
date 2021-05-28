@@ -1,0 +1,7 @@
+{
+    "products":[
+ {"id":1,"title":"produsctA","price":200,"description":"laptop","image":"https://alborzmobin.net/wp-content/uploads/2021/05/laptop01.jpg"},
+ {"id":2,"title":"produsctB","price":250,"description":"laptop","image":"https://alborzmobin.net/wp-content/uploads/2021/05/laptop01.jpg"},
+ {"id":3,"title":"produsctC","price":300,"description":"laptop","image":"https://alborzmobin.net/wp-content/uploads/2021/05/laptop01.jpg"}
+    ]
+}

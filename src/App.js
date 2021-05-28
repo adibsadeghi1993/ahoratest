@@ -12,9 +12,10 @@ function App() {
 
   useEffect(() => {
     axios
-      .get("http://localhost:3008/products")
+      .get("http://localhost:3004/products")
       .then((res) => {
         setProducts(res.data);
+        console.log(res)
       })
       .catch((err) => console.log("err"));
   }, []);
